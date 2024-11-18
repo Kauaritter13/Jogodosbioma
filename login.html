@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Governador Sustentável</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <img src="logo.png" alt="Logotipo do Jogo" class="logo"> <!-- Logotipo -->
+            <h1>Bem-vindo ao Jogo do Governador Sustentável</h1>
+            <form id="loginForm">
+                <label for="playerName">Nome:</label>
+                <input type="text" id="playerName" name="playerName" required placeholder="Digite seu nome">
+
+                <label for="difficulty">Escolha sua Dificuldade:</label>
+                <select id="difficulty" name="difficulty" required>
+                    <option value="hippie">Hippie (Respeito ao Meio Ambiente)</option>
+                    <option value="moderate">Moderado (Equilíbrio entre economia e meio ambiente)</option>
+                    <option value="visionary">Governador Visionário (Crescimento e Sustentabilidade)</option>
+                </select>
+
+                <button type="submit">Entrar no Jogo</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

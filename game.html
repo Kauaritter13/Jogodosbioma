@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Governador Sustentável - Tycoon</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-sidebar">
+            <h1>Bem-vindo, <span id="playerName"></span>!</h1>
+            <p>Dificuldade: <span id="difficultyLevel"></span></p>
+            <div>
+                <h3>Recursos:</h3>
+                <p>Dinheiro: <span id="money">0</span> K</p>
+                <p>População: <span id="population">0</span></p>
+                <p>Felicidade: <span id="happiness">0</span>%</p>
+                <p>Saúde Ambiental: <span id="environment">0</span>%</p>
+                <p>Tempo: <span id="gameTime">0</span> dias</p>
+            </div>
+            <div>
+                <h3>Decisões:</h3>
+                <button id="investEducation">Investir em Educação (800K)</button>
+                <button id="investInfrastructure">Infraestrutura (1200K)</button>
+                <button id="plantForest">Plantar Floresta (300K)</button>
+                <button id="reforestation">Reflorestamento (500K)</button>
+                <button id="carTax">Taxar Carros (200K)</button>
+            </div>
+        </div>
+
+        <div class="game-main">
+            <h2>Gerencie sua cidade e lide com as consequências!</h2>
+            <div id="cityMap" class="city-map"></div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
