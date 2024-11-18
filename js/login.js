@@ -1,10 +1,14 @@
 // Captura o formulário de login
-document.getElementById('loginForm').addEventListener('submit', function(event) {
+const form = document.getElementById('loginForm');
+console.log(form)
+
+form.addEventListener('submit', function (event) {
     event.preventDefault(); // Impede o envio do formulário padrão
 
     // Obtém o nome do jogador e a dificuldade escolhida
     const playerName = document.getElementById('playerName').value.trim();
-    const difficulty = document.getElementById('difficulty').value;
+
+    const difficulty = document.querySelector('input[name="difficulty"]:checked')
 
     // Valida o nome do jogador
     if (!playerName) {

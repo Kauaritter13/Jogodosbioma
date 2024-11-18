@@ -4,29 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Governador Sustentável</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="./styles/login.css">
+    <script defer src="./js/login.js"></script>
 </head>
 <body>
     <div class="login-container">
         <div class="login-box">
             <img src="logo.png" alt="Logotipo do Jogo" class="logo"> <!-- Logotipo -->
-            <h1>Bem-vindo ao Jogo do Governador Sustentável</h1>
+            <h1>Bem-vindo ao <br> <span class="destacado">Biome Explorer!</span></h1>
             <form id="loginForm">
-                <label for="playerName">Nome:</label>
-                <input type="text" id="playerName" name="playerName" required placeholder="Digite seu nome">
+                <div>
+                    <label for="playerName">Nome:</label>
+                    <input type="text" id="playerName" name="playerName" required placeholder="Digite seu nome">
+                </div>
+                <div>
+                    <p>Escolha sua Dificuldade:</p>
+                    <div id="seletorPersonagem">
+                        <input type="radio" name="difficulty" required id="sustentavel">
+                        <label for="sustentavel">
+                            <img src="./assets/Sustentabilidade.webp" alt="sustentavel">
+                        </label>
+                        <input type="radio" name="difficulty" required id="moderado">
+                        <label for="moderado">
+                            <img src="./assets/Moderado.webp" alt="moderado">
+                        </label>
+                        <input type="radio" name="difficulty" required id="visionario">
+                        <label for="visionario">
+                            <img src="./assets/Visionário.webp" alt="visionario">
+                        </label>                    
+                    </div>
 
-                <label for="difficulty">Escolha sua Dificuldade:</label>
-                <select id="difficulty" name="difficulty" required>
-                    <option value="hippie">Hippie (Respeito ao Meio Ambiente)</option>
-                    <option value="moderate">Moderado (Equilíbrio entre economia e meio ambiente)</option>
-                    <option value="visionary">Governador Visionário (Crescimento e Sustentabilidade)</option>
-                </select>
+                </div>
 
-                <button type="submit">Entrar no Jogo</button>
+                <div class="submit-container">
+                    <button type="submit">Entrar no Jogo</button>
+                </div>
             </form>
         </div>
     </div>
-
-    <script src="login.js"></script>
 </body>
 </html>
