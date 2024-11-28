@@ -1,13 +1,7 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(45deg, #4caf50, #8bc34a);
-    margin: 0;
-    padding: 0;
-}
-
 .game-container {
     display: flex;
     height: 100vh;
+    width: 100vw;
 }
 
 .game-sidebar {
@@ -16,6 +10,10 @@ body {
     background-color: #333;
     color: white;
     box-sizing: border-box;
+}
+
+h2 {
+    color: #222;
 }
 
 .game-main {
@@ -27,11 +25,18 @@ body {
 }
 
 .city-map {
-    border: 2px solid #ddd;
+    border: 2px solid #222;
+    border-radius: .2rem;
     height: 80%;
     position: relative;
     overflow: hidden;
-    background: url('assets/grass.png') repeat; /* Plano de fundo */
+    background: #5da760;
+    & > * {
+        position: absolute;
+        cursor: pointer;
+        width: 8rem;
+        aspect-ratio: 1;
+    }
 }
 
 .city-element {
