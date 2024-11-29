@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: url('../assets/loginBackground.svg');
+  background-size: cover;
+  background-color: #adf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: rgb(230, 230, 230);
+}
+
+p, label, input {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.destacado {
+  color: #22a;
+  text-decoration: underline;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+button {
+  padding: 10px;
+  background-color: #45a049;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: .125s;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(105%);
+}

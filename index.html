@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Governador Sustentável</title>
+    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script defer src="./js/login.js"></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <img src="logo.png" alt="Logotipo do Jogo" class="logo"> <!-- Logotipo -->
+            <h1>Bem-vindo ao <br> <span class="destacado">Biome Explorer!</span></h1>
+            <form id="loginForm">
+                <div>
+                    <label for="playerName">Nome:</label>
+                    <input type="text" id="playerName" name="playerName" required placeholder="Digite seu nome">
+                </div>
+                <div>
+                    <p>Escolha sua Dificuldade:</p>
+                    <div id="seletorPersonagem">
+                        <input class="difficulty-class" type="radio" name="difficulty" required id="sustentavel">
+                        <label for="sustentavel">
+                            <img src="./assets/characters/Sustentabilidade.webp" alt="sustentavel">
+                        </label>
+                        <input class="difficulty-class" type="radio" name="difficulty" required id="moderado">
+                        <label for="moderado">
+                            <img src="./assets/characters/Moderado.webp" alt="moderado">
+                        </label>
+                        <input class="difficulty-class" type="radio" name="difficulty" required id="visionario">
+                        <label for="visionario">
+                            <img src="./assets/characters/Visionário.webp" alt="visionario">
+                        </label>                    
+                    </div>
+
+                </div>
+
+                <div class="submit-container">
+                    <button type="submit">Entrar no Jogo</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

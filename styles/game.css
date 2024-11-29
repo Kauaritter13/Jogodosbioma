@@ -1,0 +1,74 @@
+.game-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.game-sidebar {
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: #222;
+}
+
+.game-main {
+  width: 75%;
+  padding: 20px;
+  position: relative;
+  background-color: #eef2f3;
+  box-sizing: border-box;
+}
+
+.city-map {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #222;
+  border-radius: .4rem;
+  overflow: hidden;
+  background: #98d49a;
+  & > * {
+    position: absolute;
+    cursor: pointer;
+    width: 8rem;
+    aspect-ratio: 1;
+  }
+}
+
+.city-element {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #333;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.opcoes > * {
+  margin: 1.2rem 0;
+}
+
+h2, h1 {
+  color: #ccc;
+}
