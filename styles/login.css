@@ -1,56 +1,65 @@
 .login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .login-box {
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 4rem 3rem;
-    border-radius: 1.6rem;
-    text-align: left;
-    color: white;
-    box-shadow: .2rem .4rem 2rem 0 rgba(0, 0, 0, 0.6);
+  background: rgba(250, 250, 250, .4);
+  backdrop-filter: blur(5px);
+  background-blend-mode: lighten;
+  border: 2px solid #fff;
+  padding: 4rem 3rem;
+  border-radius: 1.6rem;
+  text-align: left;
+  box-shadow: .2rem .3rem 4rem 0 rgba(100, 100, 100, 0.3);
+  font-weight: 500;
+  color: #222;
 }
 
 #loginForm > div {
-    margin: .6rem 0;
+  margin: .6rem 0;
 }
 
 #loginForm > div > input, select {
-    max-width: 80%;
-    padding: .2rem .4rem;
-    margin-top: .2rem;
+  max-width: 80%;
+  padding: .2rem .4rem;
+  margin-top: .2rem;
 }
 
 label > img {
-    width: 8rem;
-    height: 8rem;
-    margin: .3rem;
-    border-radius: 1rem;
-    transition: .125s;
-    cursor: pointer;
+  width: 8rem;
+  height: 8rem;
+  margin: .3rem;
+  border-radius: 1rem;
+  transition: .125s;
+  cursor: pointer;
 }
 
 label > img:hover {
-    transform: scale(105%);
+  transform: scale(105%);
+}
+
+input {
+  border-radius: .2rem;
+  border: 2px solid #fff;
 }
 
 /* chatgpt ajuda muito nessas linhas estranhas de seletores css */
 input[type="radio"]:checked + label img {
-    border: .3rem solid rgba(250, 250, 250, .8);
-    margin: 0rem;
+  border: .2rem solid #55f;
+  margin: 0rem;
 }
 
 #seletorPersonagem {
-    display: flex;
+  display: flex;
 }
 
 #seletorPersonagem > input {
-    display: none;
+  display: none;
 }
 
 .submit-container {
-    display: flex; 
-    justify-content: center;
+  display: flex; 
+  justify-content: center;
 }
